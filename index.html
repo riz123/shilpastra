@@ -9,17 +9,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --black:#19191b;
-    --black-soft:#1f2022;
-    --charcoal:#26272a;
-    --charcoal-2:#2f3033;
-    --line:#3d3d40;
-    --gold:#c99a3f;
-    --gold-bright:#f0bf4c;
-    --gold-deep:#7d5c22;
-    --ivory:#f2ede2;
-    --stone:#9c968a;
-    --stone-dim:#6b665e;
+    --black:#ffffff;
+    --black-rgb:255,255,255;
+    --black-soft:#f7f5f0;
+    --charcoal:#f0ede5;
+    --charcoal-2:#e8e3d8;
+    --line:#ddd6c4;
+    --gold:#8a5a12;
+    --gold-bright:#a9720f;
+    --gold-deep:#6b4a12;
+    --ivory:#201c12;
+    --stone:#57503e;
+    --stone-dim:#726a54;
     --radius:2px;
     --ease:cubic-bezier(.19,1,.22,1);
   }
@@ -65,11 +66,11 @@
     position:fixed;top:0;left:0;right:0;z-index:1000;
     padding:22px 0;
     transition:.35s var(--ease);
-    background:linear-gradient(to bottom, rgba(11,11,12,.9), transparent);
+    background:linear-gradient(to bottom, rgba(var(--black-rgb),.9), transparent);
   }
   header.scrolled{
     padding:12px 0;
-    background:rgba(11,11,12,.92);
+    background:rgba(var(--black-rgb),.94);
     backdrop-filter:blur(10px);
     border-bottom:1px solid var(--line);
   }
@@ -230,7 +231,7 @@
   .proj-card:hover .proj-img img{transform:scale(1.06);}
   .proj-status{
     position:absolute;top:12px;left:12px;padding:5px 12px;font-family:'JetBrains Mono',monospace;
-    font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;background:rgba(11,11,12,.85);border:1px solid var(--gold);color:var(--gold);
+    font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;background:rgba(var(--black-rgb),.85);border:1px solid var(--gold);color:var(--gold);
   }
   .proj-status.done{border-color:var(--stone-dim);color:var(--stone);}
   .proj-body{padding:20px 22px 24px;}
@@ -388,8 +389,17 @@
     <div class="section-head reveal">
       <div class="eyebrow">About ShilpAstra</div>
       <h2>Built on craft.<br>Delivered with precision.</h2>
-      <p class="lede">"Shilp" is the art of building with mastery; "Astra" is the instrument that makes it possible. Together, they describe how we work — combining disciplined engineering with hands-on craftsmanship on every site we touch.</p>
+      <p class="lede"><b>Shilp</b> -> Means craftmanship, architecture, art, creation, and skilled construction in Sanskrit/Marathi. It is strongly associated with design, engineering and structural excellence.
+      It comes from the concept of Shilp Shastra — the ancient Indian science of architecture and craftmanship.</p>
+      <p class="lede"><b>Astra</b> -> Means weapon, powerfool tool, force, strategic strength in Sanskrit. In modern branding, it suggests power, precision, innovation and advanced technology.</p>
+      <p class="lede"><b>Infratech</b> -> Combintaion of Infrastructure + Technology, indicating modern engineering and construction solutions.</p>
+      <br/>
+      <p class="lede"><b>Overall Meaning</b></p>
+      <br/>
+      <p class="lede"><b>ShilpAstra Infratech Pvt Ltd</b> can be interpreted as:</p>
+      <p class="lede">"A powerful force of craftmanship and technology in infrastructure development."</p>
     </div>
+    
 
     <div class="about-grid">
       <div class="about-copy reveal">
